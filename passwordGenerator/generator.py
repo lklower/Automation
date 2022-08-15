@@ -71,6 +71,6 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lowercase', default=1, type=int, help='At least umbers of lowercase latters should contain in the password')
     parser.add_argument('-u', '--uppercase', default=1, type=int, help='At least Numbers of uppercase letters should contain in the password')
     parser.add_argument('-s', '--special-chars', default=1, type=int, help='At least Numbers of special chars should contain in the password')
-    parser.add_argument('-t', '--min-length', default=10, type=int, help='The minimium length of password. Default set to 10')
+    parser.add_argument('-m', '--min-length', default=10, type=int, help='The minimium length of password. Default set to 10')
 
     main(args=parser.parse_args())
