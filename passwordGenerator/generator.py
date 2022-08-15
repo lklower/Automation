@@ -6,19 +6,27 @@ random.seed(random.randint(1, 9999))
 
 
 def special_charaters():
-    return ['!', '~', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '|', '/', '[', ']', '{', '}', ':', '.', ',', ';', '?', '<', '>']
+    l: list = ['!', '~', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '|', '/', '[', ']', '{', '}', ':', '.', ',', ';', '?', '<', '>']
+    random.shuffle(l)
+    return l
 
 
 def lowercase_latters():
-    return [i for i in string.ascii_lowercase]
+    l: list = [i for i in string.ascii_lowercase]
+    random.shuffle(l)
+    return l
 
 
 def uppercase_latters():
-    return [i for i in string.ascii_uppercase]
+    l: list = [i for i in string.ascii_uppercase]
+    random.shuffle(l)
+    return l
 
 
 def digits():
-    return [i for i in string.digits]
+    l: list = [i for i in string.digits]
+    random.shuffle(l)
+    return l
 
 
 def main(args):
@@ -57,7 +65,6 @@ def main(args):
 
 
 if __name__ == '__main__':
-
     parser = ArgumentParser(prog='Password Generator', description='Generate the random password with this tool')
 
     parser.add_argument('-d', '--digit', default=1, type=int, help='At least numbers of digits should contain in the password')
