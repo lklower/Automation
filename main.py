@@ -1,3 +1,6 @@
+/**
+ intial the global environment.
+**/
 def initialize():
     print("initialize...")
 
