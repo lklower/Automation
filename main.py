@@ -1,5 +1,5 @@
 # intial the global environment.
-# hello world!
+# wrote from lklower.
 def initialize():
     print("initialize...")
 
