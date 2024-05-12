@@ -4,7 +4,9 @@ import random
 
 random.seed(random.randint(1, 9999))
 
-
+/**
+ handle special charaters function.
+**/
 def special_charaters():
     l: list = ['!', '~', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '|', '/', '[', ']', '{', '}', ':', '.', ',', ';', '?', '<', '>']
     random.shuffle(l)
